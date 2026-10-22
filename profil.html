@@ -9,22 +9,12 @@
   body { background: #000; display: flex; justify-content: center; align-items: center; min-height: 100vh; color: #fff; }
   .phone-screen { width: 100%; max-width: 400px; min-height: 100vh; background: linear-gradient(180deg, #1f2c4e 0%, #0d1224 40%, #080b14 100%); padding: 40px 20px; position: relative; }
   
-  /* HEADER & KOTAK PUTIH */
-  .header { display: flex; align-items: center; gap: 15px; margin-bottom: 30px; position: relative; padding-left: 10px; }
-  
-  .logo-box { 
-    width: 75px; height: 75px; background: #fff; border-radius: 12px; 
-    display: flex; justify-content: center; align-items: center; 
-    overflow: hidden; flex-shrink: 0; padding: 5px;
-  }
-  
-  /* TRIK ZOOM GAMBAR BIAR LAPANGAN HILANG */
-  .logo-box img { 
-    width: 140%; height: 140%; object-fit: cover; object-position: center 35%; 
-  }
-  
-  .header-text h1 { font-size: 18px; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; text-transform: uppercase; }
-  .header-text a { color: #64b5f6; font-size: 12px; text-decoration: none; }
+  /* HEADER (Persis Juana: Logo di atas, teks di tengah) */
+  .header { text-align: center; margin-bottom: 30px; position: relative; }
+  .logo-box { width: 75px; height: 75px; background: #fff; border-radius: 12px; margin: 0 auto 15px; display: grid; place-items: center; overflow: hidden; padding: 5px; }
+  .logo-box img { width: 100%; height: 100%; object-fit: contain; }
+  .header h1 { font-size: 20px; font-weight: 700; letter-spacing: 1px; margin-bottom: 6px; text-transform: uppercase; }
+  .header a { color: #64b5f6; font-size: 12px; text-decoration: none; }
 
   /* KARTU PROFIL */
   .profile-card { background: #171c2e; border-radius: 16px; border: 1px solid #3a4a6b; position: relative; margin-bottom: 16px; overflow: hidden; }
@@ -33,18 +23,20 @@
   .profile-card::before { left: -3px; }
   .profile-card::after { right: -3px; }
 
+  /* FOTO PROFIL (Pas di tengah) */
   .profile-pic-container { position: absolute; top: 35px; left: 50%; transform: translateX(-50%); width: 110px; height: 110px; border-radius: 50%; border: 4px solid #171c2e; background: #2a344a; z-index: 5; overflow: hidden; }
   .profile-pic-container img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
 
-  .profile-info { padding: 65px 20px 20px; text-align: left; padding-left: 20px; }
+  .profile-info { padding: 65px 20px 20px; text-align: center; }
   .profile-info h2 { font-size: 20px; font-weight: 800; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 0.5px; }
-  .tags { display: flex; justify-content: flex-start; gap: 8px; flex-wrap: wrap; }
+  
+  /* TAG (Tengah) */
+  .tags { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
   .tag { padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; }
   .tag-blue { background: #2980b9; color: #fff; }
   .tag-dark { background: #23293d; color: #fff; border: 1px solid #3a4a6b; }
   .tag-green { background: #1abc9c; color: #fff; }
 
-  /* IDENTITAS */
   .info-box { background: #121726; border-radius: 16px; padding: 20px; border: 1px solid #2a344a; margin-bottom: 16px; }
   .info-box h3 { color: #64b5f6; font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 20px; }
   .info-row { margin-bottom: 16px; }
@@ -58,19 +50,16 @@
 
   <div class="header">
     <div class="logo-box">
-      <!-- NAMA FILE LOGO LO YANG ASLI -->
+      <!-- NAMA FILE LOGO (GANTI KALAU LO UDAH CROP & UPLOAD BARU) -->
       <img src="IMG_20261022_205620.jpg" alt="Logo Porprov">
     </div>
-    <div class="header-text">
-      <h1>PORPROV KALTIM</h1>
-      <a href="#">Kembali ke halaman verifikasi</a>
-    </div>
+    <h1>PORPROV KALTIM</h1>
+    <a href="#">Kembali ke halaman verifikasi</a>
   </div>
 
   <div class="profile-card">
     <div class="profile-card-top"></div>
     
-    <!-- FOTO LO -->
     <div class="profile-pic-container">
       <img src="IMG_20261008_184945_903.jpg" alt="Foto Dimas">
     </div>
