@@ -11,8 +11,11 @@
   
   /* HEADER (Logo di kiri, teks di kanan) */
   .header { display: flex; align-items: center; gap: 15px; margin-bottom: 30px; position: relative; padding-left: 10px; }
-  .logo-box { width: 75px; height: 75px; background: #fff; border-radius: 12px; display: grid; place-items: center; padding: 4px; flex-shrink: 0; overflow: hidden; }
-  .logo-box img { width: 100%; height: 100%; object-fit: cover; }
+  .logo-box { width: 75px; height: 75px; background: #fff; border-radius: 8px; display: grid; place-items: center; padding: 4px; flex-shrink: 0; overflow: hidden; }
+  
+  /* SETTING LOGO BIAR UTUH DAN ADA KOTAK PUTIHNYA */
+  .logo-box img { width: 100%; height: 100%; object-fit: contain; background: white; border-radius: 6px; }
+  
   .header-text h1 { font-size: 18px; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; text-transform: uppercase; }
   .header-text a { color: #64b5f6; font-size: 12px; text-decoration: none; }
 
@@ -46,11 +49,11 @@
 
 <div class="phone-screen">
 
-  <!-- HEADER: Logo Maskot -->
+  <!-- HEADER: Logo Maskot Burung -->
   <div class="header">
     <div class="logo-box">
-      <!-- GAMBAR MASKOT YANG LO KIRIM TADI (Base64) -->
-      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAEsASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigD//2Q==" alt="Logo Porprov">
+      <!-- NAMA FILE LOGO LO -->
+      <img src="IMG_20261022_205620.jpg" alt="Logo Porprov">
     </div>
     <div class="header-text">
       <h1>PORPROV KALTIM</h1>
@@ -61,6 +64,7 @@
   <div class="profile-card">
     <div class="profile-card-top"></div>
     
+    <!-- FOTO PROFIL LO -->
     <div class="profile-pic-container">
       <img src="IMG_20261008_184945_903.jpg" alt="Foto Dimas">
     </div>
